@@ -26,7 +26,12 @@ void main() {
           print("Hasil Perkalian: ${angka1 * angka2}");
           break;
         case 2:
-          print("Hasil Pembagian: ${angka1 / angka2}");
+          if(angka2 != 0) {
+            print("Hasil Pembagian: ${angka1 / angka2}");
+          }
+          else {
+            print("Pembagian tidak Boleh dengan 0");
+          }
           break;
         case 3:
           print("Hasil Penambahan: ${angka1 + angka2}");
